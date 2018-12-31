@@ -1,0 +1,19 @@
+.Busy-Spinner {
+
+}
+  
+  .Busy-spinner-logo {
+    animation: Busy-logo-spin infinite 20s linear;
+    min-height: 10rem;
+    height: 10vmin;
+  }
+  
+  @keyframes Busy-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

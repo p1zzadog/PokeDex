@@ -1,0 +1,17 @@
+.Poke-List {
+  display: flex;
+  flex-direction: column;
+}
+
+.Pokemon {
+  display: flex;
+}
+
+.Pokemon-profile-pic {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.Pokemon-details {
+  flex: 1;
+}
