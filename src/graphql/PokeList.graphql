@@ -1,6 +1,5 @@
-import gql from 'graphql-tag';
+# not going to work unless i eject app and configure webpack loader
 
-export const GET_POKEMON = gql`
 query Pokemon($first: Int!, $after: String) {
     Pokemon(first: $first, after: $after) {
         edges {
@@ -34,4 +33,3 @@ query Pokemon($first: Int!, $after: String) {
         totalCount
     }
 }
-`;

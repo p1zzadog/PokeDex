@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import pokelogo from './images/Pokeball.png';
 import './App.css';
-import PokeList from './components/PokeList';
+import AppHeader from './components/AppHeader';
+import PokeList from './routes/PokeList'; // only 1 route so far, no router
 
 
 class App extends Component {
+  static propTypes = {
+
+  }
+  static defaultProps = {
+
+  }
   render() {
     return (
       <div className="App">
@@ -16,10 +23,6 @@ class App extends Component {
   }
 }
 
-const AppHeader = () =>
-  <header className="App-header">
-    <img src={pokelogo} className="App-logo" alt="logo" />
-    <p className="App-header-title">&nbsp;PokeGram</p>
-  </header>
+
 
 export default App;

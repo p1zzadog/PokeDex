@@ -1,0 +1,21 @@
+# not going to work unless i eject app and configure webpack loader
+
+
+#import "./PokeListFragments.graphql"
+query Pokemon($filter: PokemonFilter) {
+    Pokemon(filter:$filter) {
+        edges {
+            cursor
+            node {
+                ...PokeListInfo
+            }
+        }
+        pageInfo {
+            startCursor
+            endCursor
+            hasNextPage
+            hasPreviousPage
+        }
+        totalCount
+    }
+}

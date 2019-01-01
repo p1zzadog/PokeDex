@@ -1,0 +1,21 @@
+# not going to work unless i eject app and configure webpack loader
+
+fragment PokeListInfo on Pokemon {
+    id
+    identifier
+    englishName
+    height
+    weight
+    sprites {
+        normal {
+            male {
+                front
+                back
+            }
+            female {
+                front
+                back
+            }
+        }
+    }
+}

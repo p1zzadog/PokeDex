@@ -1,0 +1,4 @@
+.Poke-List {
+  display: flex;
+  flex-direction: column;
+}

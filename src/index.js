@@ -6,10 +6,17 @@ import { ApolloProvider } from "react-apollo";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import defaults from './graphql/defaults';
+import resolvers from './graphql/resolvers';
+
 
 const client = new ApolloClient({
-    // uri: 'https://pokeql.com/v1'
-    uri: 'http://localhost:3001/v1'
+    uri: 'https://pokeql.com/v1',
+    clientState: {
+        defaults,
+        resolvers
+    }
+    // uri: 'http://localhost:3001/v1'
 });
 
 ReactDOM.render(
